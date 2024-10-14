@@ -74,16 +74,16 @@ Este sistema permite que os usuários desenhem em um canvas, adicionem texto, ap
 
 Aqui estão algumas imagens que mostram o funcionamento do sistema:
 
-![Exemplo de Desenho](img/exemplo_desenho.png)  
+![Exemplo de Desenho](img/exemplo_desenho.gif)  
 *Exemplo de desenho no canvas.*
 
-![Adicionar Texto](img/adicionar_texto.png)  
+![Adicionar Texto](img/adicionar_texto.gif)  
 *Adicionando uma caixa de texto ao canvas.*
 
-![Redimensionar Canvas](img/redimensionar_canvas.png)  
+![Redimensionar Canvas](img/redimensionar_canvas.gif)  
 *Redimensionando o canvas.*
 
-![Exportar como PDF](img/exportar_pdf.png)  
+![Exportar como PDF](img/exportar_pdf.gif)  
 *Exportando o trabalho como PDF.*
 
 
