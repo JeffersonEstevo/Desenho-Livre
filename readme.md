@@ -70,6 +70,23 @@ Este sistema permite que os usuários desenhem em um canvas, adicionem texto, ap
    - Clique no botão "Salvar como PDF" para exportar o conteúdo do canvas.
    - O arquivo PDF será salvo em seu dispositivo com o nome `drawing.pdf`.
 
+## Demonstração Visual
+
+Aqui estão algumas imagens que mostram o funcionamento do sistema:
+
+![Exemplo de Desenho](img/exemplo_desenho.png)  
+*Exemplo de desenho no canvas.*
+
+![Adicionar Texto](img/adicionar_texto.png)  
+*Adicionando uma caixa de texto ao canvas.*
+
+![Redimensionar Canvas](img/redimensionar_canvas.png)  
+*Redimensionando o canvas.*
+
+![Exportar como PDF](img/exportar_pdf.png)  
+*Exportando o trabalho como PDF.*
+
+
 ## Contribuições
 
 Sinta-se à vontade para contribuir com melhorias ou correções. Abra um issue ou envie um pull request.
