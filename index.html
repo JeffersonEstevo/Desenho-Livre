@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma do documento -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a viewport para dispositivos móveis -->
+    <title>Desenho com Caneta Livre</title> <!-- Título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <div id="toolbar"> <!-- Barra de ferramentas -->
+        <label for="canvasWidth">Largura:</label> <!-- Rótulo para a largura do canvas -->
+        <input type="number" id="canvasWidth" value="595"> <!-- Campo de entrada numérica para a largura do canvas -->
+        <label for="canvasHeight">Altura:</label> <!-- Rótulo para a altura do canvas -->
+        <input type="number" id="canvasHeight" value="842"> <!-- Campo de entrada numérica para a altura do canvas -->
+        <button id="resizeCanvas">Redimensionar Canvas</button> <!-- Botão para redimensionar o canvas -->
+
+        <label for="color">Cor:</label> <!-- Rótulo para a cor do pincel -->
+        <input type="color" id="color" value="#000000"> <!-- Seletor de cor para o pincel -->
+        
+        <label for="size">Espessura:</label> <!-- Rótulo para a espessura do pincel -->
+        <input type="range" id="size" min="1" max="50" value="5"> <!-- Controle deslizante para a espessura -->
+
+        <button id="erase">Borracha</button> <!-- Botão para ativar a borracha -->
+        <button id="undo">Desfazer (Ctrl + Z)</button> <!-- Botão para desfazer a última ação -->
+
+        <label for="textColor">Cor do Texto:</label> <!-- Rótulo para a cor do texto -->
+        <input type="color" id="textColor" value="#000000"> <!-- Seletor de cor para o texto -->
+        
+        <label for="fontSize">Tamanho da Fonte:</label> <!-- Rótulo para o tamanho da fonte -->
+        <input type="number" id="fontSize" value="20" min="5" max="100"> <!-- Campo de entrada numérica para o tamanho da fonte -->
+        
+        <button id="addText">Adicionar Texto</button> <!-- Botão para adicionar texto -->
+        <button id="selectModeButton">Selecionar</button> <!-- Botão para ativar o modo de seleção -->
+        <button id="deleteText">Deletar Texto</button>  <!-- Botão para deletar texto -->
+        <button id="savePdf">Salvar como PDF</button>
+
+        
+        <div id="brushSizeDisplay">Tamanho do Pincel: 5</div> <!-- Exibição do tamanho do pincel -->
+        <div id="cursorIndicator" class="cursor-indicator" style="display: none;"></div> <!-- Indicador de cursor invisível inicialmente -->
+        
+
+    </div>
+    <canvas id="drawingCanvas" width="595" height="842"></canvas> <!-- Canvas onde o desenho acontece -->
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>

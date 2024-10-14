@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Facilita o dimensionamento */
+}
+
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte do corpo */
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+}
+
+/* Toolbar */
+#toolbar {
+    display: flex; /* Usa flexbox para organizar a barra de ferramentas */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    justify-content: flex-start; /* Alinha itens à esquerda */
+    align-items: center; /* Centraliza itens verticalmente */
+    padding: 10px; /* Espaço interno */
+    background-color: #ffffff; /* Cor de fundo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 10px; /* Margem externa */
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Preenchimento interno */
+    margin: 5px; /* Margem externa */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+    min-width: 100px; /* Largura mínima para os botões */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Estilo dos inputs */
+input[type="number"],
+input[type="color"],
+input[type="range"] {
+    margin: 5px; /* Margem externa */
+    padding: 5px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Canvas */
+#drawingCanvas {
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: block; /* Exibe o canvas como bloco */
+    margin: 10px auto; /* Centraliza o canvas */
+    background-color: #fff; /* Cor de fundo do canvas */
+}
+
+/* Caixa de texto */
+.text-box {
+    border: 2px dashed #007bff; /* Borda azul pontilhada */
+    padding: 5px; /* Preenchimento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+/* Estilo do foco */
+.text-box:focus {
+    outline: none; /* Remove o contorno padrão do foco */
+    border-color: #0056b3; /* Cor da borda em foco */
+}
+
+/* Estilo específico para o botão de borracha */
+button.erase-active {
+    background-color: #ff69b4; /* Cor rosa quando ativo */
+}
+
+/* Cursor de borracha */
+canvas.eraser-active {
+    cursor: auto; /* Cursor padrão */
+}
+
+/* Indicador de tamanho do pincel */
+#brushSizeDisplay {
+    margin-left: 10px; /* Margem à esquerda */
+    font-weight: bold; /* Negrito */
+}
+
+/* Indicador de cursor */
+.cursor-indicator {
+    position: absolute; /* Posição absoluta */
+    width: 20px; /* Tamanho inicial */
+    height: 20px; /* Tamanho inicial */
+    border-radius: 50%; /* Forma circular */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor da bolinha */
+    pointer-events: none; /* Não interfere nos eventos do mouse */
+    transform: translate(-50%, -50%); /* Centraliza a bolinha no cursor */
+    display: none; /* Inicialmente invisível */
+}
